@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Exercice : Exercice d'ordonnancement [C1 NOTION DE SOLUTION]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2024-11-08 09:40" ></meta>
+		<link rel="start" href="COURS_C1_NOTION_DE_SOLUTION.html" title="CHIMIE / C1 NOTION DE SOLUTION" ></link>
+		<meta name="author" content="" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"m38jq4ua"};
+/*1*/ window.scLoadParams = {destUri:"/co/COURS_C1_NOTION_DE_SOLUTION_22.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module quiz">
+		<div id="root"><header id="header"><h1><span>CHIMIE / C1 NOTION DE SOLUTION</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk quiz article ordWord"><h2 class="hBk_ti"><span>Exercice d'ordonnancement</span></h2><div class="hBk_co"><script>/*<![CDATA[*/
+var BY5H2eegXkeUwN4FwncVMi_Add = {
+
+	fId : "BY5H2eegXkeUwN4FwncVMi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "play" : {
+var vLoadRespSession = "";
+
+	this.fResultDisplay = "none";
+
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"ddLabel_Right","ddLabel_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "ddLabel_Wrong" : "ddLabel_Right";
+			var vNewClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "ddLabel_Right" : "ddLabel_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+		this.computeScore = function() {
+
+		function scoreOrder(pLabels, pGroup) {
+		var vMax=0, vErr=0;
+		var vD = pLabels.length-1;
+		for(var i=vD; i >=0; i--) {
+		if(pGroup && pGroup!=pLabels[i].rG) return 0;
+		vErr += Math.abs(pLabels[i].sO - pLabels[i].rO);
+		vMax += Math.abs(vD);
+		vD = vD - 2;
+		}
+		return vMax>0 ? (vMax - vErr) / vMax : 0;
+		}
+
+			this.fMinPts = 0;
+			this.fMaxPts = this.fLabels.length;
+			this.fScorePts = Math.floor(scoreOrder(this.fLabels, this.fGroupsC.length-1) * this.fLabels.length);
+var vScoreSession = "";
+	if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+		this.refreshScoresFeedbacks();
+this.refreshResult();
+};
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		this.load(vLoadRespSession);
+		this.synch();
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_solution"), "collapsed");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_reset"), "visible");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_Nbe"), false);
+this.fRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, this.fRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, this.fRespSession, "attempt");
+if(this.fRespSession != vLoadRespSession) this.saveResp(this.fRespSession);
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+case "read" : {
+var vLoadRespSession = "";
+
+	this.fResultDisplay = "none";
+
+
+	this.refreshResult = function(pDisplay){
+		if(pDisplay) this.fResultDisplay = pDisplay;
+		if(this.fResultDisplay == "none") for(var i=this.fLabels.length -1; i >=0; i--)  scDragMgr.helpers.delClass(this.fLabels[i],"ddLabel_Right","ddLabel_Wrong");
+		else for(var i=this.fLabels.length -1; i >=0; i--) {
+			var vLabel = this.fLabels[i];
+
+			var vOldClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "ddLabel_Wrong" : "ddLabel_Right";
+			var vNewClass = (vLabel.sO == vLabel.rO && vLabel.sG == vLabel.rG) ? "ddLabel_Right" : "ddLabel_Wrong";
+
+			scDragMgr.helpers.switchClass(vLabel, vOldClass, vNewClass);
+		}
+	};
+		this.computeScore = function() {
+
+		function scoreOrder(pLabels, pGroup) {
+		var vMax=0, vErr=0;
+		var vD = pLabels.length-1;
+		for(var i=vD; i >=0; i--) {
+		if(pGroup && pGroup!=pLabels[i].rG) return 0;
+		vErr += Math.abs(pLabels[i].sO - pLabels[i].rO);
+		vMax += Math.abs(vD);
+		vD = vD - 2;
+		}
+		return vMax>0 ? (vMax - vErr) / vMax : 0;
+		}
+
+			this.fMinPts = 0;
+			this.fMaxPts = this.fLabels.length;
+			this.fScorePts = Math.floor(scoreOrder(this.fLabels, this.fGroupsC.length-1) * this.fLabels.length);
+
+		this.refreshScoresFeedbacks();
+this.refreshResult();
+};
+		for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		this.load(vLoadRespSession);
+		this.synch();
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_solution"), "collapsed");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_reset"), "invisible");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_Nbe"), false);
+this.fRespSession = null;
+
+		this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){console.error("assmnt.initSeq : "+e)};
+	},
+	onActionNe6 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNbe : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_score"), "invisible");
+this.refreshResult("none");scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_solution"), "collapsed");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_globalExp"), "collapsed");
+for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], true);
+		} else {
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_score"), "visible");
+this.refreshResult("addClass");scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_solution"), "visible");
+scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_N_globalExp"), "visible");
+for(var i = this.fLabels.length - 1; i >=0; i--) scDragMgr.setDraggable(this.fLabels[i], false);
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.BY5H2eegXkeUwN4FwncVMi_Add_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+	case "read" : {
+		this.refreshResult("none");
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(!scServices.assmntMgr.review && true) return "play";
+	return "read";
+	},
+
+	saveResp:function(pSession){
+		if(pSession==null) return;
+		var vLabel = this.fLabels[0];
+		var vStr = '[{"g":' + vLabel.rG + ',"offs":' + vLabel.rO + ',' + scDragMgr.saveLabelPos(vLabel) + '}';
+		for(var i=1, len=this.fLabels.length; i < len; i++) {
+			vLabel = this.fLabels[i];
+			vStr += ',{"g":' + vLabel.rG + ',"offs":' + vLabel.rO + ',' + scDragMgr.saveLabelPos(vLabel) + '}';
+		}
+		vStr+=']';
+		scServices.assmntMgr.setResponse(this.fId, pSession, "pos", vStr);
+	},
+	load:function(pSession){
+		var vStr = (pSession!=null) ? scServices.assmntMgr.getResponse(this.fId, pSession, "pos") : null;
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			for(var j=vGroup.length-1; j >=0; j--) vGroup[j].labelsToAdd = [];
+		}
+		if(vStr) {
+						var vList = scServices.dataUtil.deserialiseObjJs(vStr);
+			for(var i=0, len=this.fLabels.length; i < len; i++) {
+				var vLabelToAdd = vList[i];
+				vLabelToAdd.label = this.fLabels[i];
+				var vGroupC = this.fGroupsC[vLabelToAdd.g];
+				if(vGroupC.length == 1) vGroupC[0].labelsToAdd[vLabelToAdd.offs] = vLabelToAdd; 
+				else vGroupC[vLabelToAdd.offs].labelsToAdd.push(vLabelToAdd);
+			}
+		} else {
+						var vBasketC = this.fGroupsC[0];
+
+			for(var i=vBasketC.length-1; i >=0; i--) for(var j=0, vLen=vBasketC[i]._Labels.length; j < vLen; j++) vBasketC[i].labelsToAdd.push({label:vBasketC[i]._Labels[j]});
+
+		}
+		scDragMgr.repopulateContainers("BY5H2eegXkeUwN4FwncVMi_Add");
+	},
+	synch:function(){
+		for(var i=this.fGroupsC.length -1; i >=0; i--) {
+			var vGroup = this.fGroupsC[i];
+			var vOffset = 0;
+			for(var j=0, vLenJ=vGroup.length; j < vLenJ; j++) {
+				var vItems = scDragMgr.getLabels(vGroup[j]);
+				var vLenK = vItems.length;
+								if(vLenK == 0) vOffset++;
+				else for(var k=0; k < vLenK; k++) {
+					vItems[k].rG = i;
+					vItems[k].rO = vOffset++;
+				}
+			}
+		}
+	},
+	onLoad: function(){
+	try{
+		var onChange = function() {
+BY5H2eegXkeUwN4FwncVMi_Add.synch();
+BY5H2eegXkeUwN4FwncVMi_Add.computeScore();
+BY5H2eegXkeUwN4FwncVMi_Add.saveResp(BY5H2eegXkeUwN4FwncVMi_Add.fRespSession);
+			scServices.assmntMgr.commit();
+		}
+		this.fLabels = [];
+		var vLabel, vC;
+scDragMgr.makeContainer("BY5H2eegXkeUwN4FwncVMi_Add", sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N77"), vC = sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N79"), sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N84")).setMode(vC, 'append', -1).setDragOverClass(vC, 'ddBasketDragOver');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN720");
+		this.fLabels.push(vLabel);
+		vLabel.sO=0;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN724");
+		this.fLabels.push(vLabel);
+		vLabel.sO=1;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN728");
+		this.fLabels.push(vLabel);
+		vLabel.sO=2;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN72c");
+		this.fLabels.push(vLabel);
+		vLabel.sO=3;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN730");
+		this.fLabels.push(vLabel);
+		vLabel.sO=4;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+vLabel = sc$("BY5H2eegXkeUwN4FwncVMi_Add_LN734");
+		this.fLabels.push(vLabel);
+		vLabel.sO=5;
+vLabel.sG=1;
+scDragMgr.makeDraggableLabel("BY5H2eegXkeUwN4FwncVMi_Add", vLabel).setCallback(vLabel, onChange).setDragClass(vLabel, 'ddLabelDrag');
+scDragMgr.makeContainer("BY5H2eegXkeUwN4FwncVMi_Add", sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N90"), vC = sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N92"), sc$("BY5H2eegXkeUwN4FwncVMi_Add_S_N94")).setMode(vC, 'ordered', -1).setDragOverClass(vC, 'ddCatchDragOver');
+this.fGroupsC = [scDragMgr.getContainers("BY5H2eegXkeUwN4FwncVMi_Add", sc$("BY5H2eegXkeUwN4FwncVMi_Add_L")), scDragMgr.getContainers("BY5H2eegXkeUwN4FwncVMi_Add", sc$("BY5H2eegXkeUwN4FwncVMi_Add_R"))];
+		for(var i = this.fGroupsC[0].length-1; i >=0; i--) this.fGroupsC[0][i]._Labels = scDragMgr.getLabels(this.fGroupsC[0][i]);
+		this.initSeq(this.getOnLoadSeq()); 
+		scAssmntMgr.setMode(sc$("BY5H2eegXkeUwN4FwncVMi_Add_A"));
+	}catch(e){console.log(e);}
+	},
+
+	pageHideSortKey: function(){
+		this.closeSeq();
+	},
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("BY5H2eegXkeUwN4FwncVMi_Add_SN105");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = BY5H2eegXkeUwN4FwncVMi_Add = scOnPageHides[scOnPageHides.length] = BY5H2eegXkeUwN4FwncVMi_Add;
+/*]]>*/</script><div id="BY5H2eegXkeUwN4FwncVMi_Add_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Préparation d’une solution à partir d’un solide. Classer les vignettes suivantes dans l’ordre (glisser deposer ver ls bas )</p></div></div><div aria-live="polite" class="response"><div id="BY5H2eegXkeUwN4FwncVMi_Add_L" class="ddBasket "><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N77" class="ddBasketCatch "><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N79" class="ddBasketCont "><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN724" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_2.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_2_1.png" width="53" height="100" alt="" ></img></a></span></p></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN728" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_03_8.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_03_9.png" width="58" height="100" alt="" ></img></a></span></p></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN720" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_01_6.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_01_7.png" width="59" height="100" alt="" ></img></a></span></p></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN72c" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_04_5.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_04_6.png" width="55" height="100" alt="" ></img></a></span></p></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN730" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_05_3.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_05_4.png" width="60" height="100" alt="" ></img></a></span></p></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_LN734" class="ddLabel "><p><span class="txt_ico_tim "><a href="../res/image_06_5.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_06_6.png" width="57" height="100" alt="" ></img></a></span></p></div></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N84" class="ddBasketIfEmpty "><span>Plus d'éléments à ordonner</span></div><div class="ddBasketEnd" ></div></div></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_R" class="ddRepArea "><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N90" class="ddDropCatch "><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N92" class="ddDropCont " ></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_S_N94" class="ddDropContIfEmpty "><span>Déposez ici</span></div><div class="ddCatchDragEnd" ></div></div></div><div id="BY5H2eegXkeUwN4FwncVMi_Add_N_solution" class="sol "><div class="ddDropCatch"><div class="solTi">Solution</div><div class="ddDropCont"><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_01_6.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_01_7.png" width="59" height="100" alt="" ></img></a></span></p></div><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_2.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_2_1.png" width="53" height="100" alt="" ></img></a></span></p></div><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_03_8.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_03_9.png" width="58" height="100" alt="" ></img></a></span></p></div><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_04_5.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_04_6.png" width="55" height="100" alt="" ></img></a></span></p></div><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_05_3.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_05_4.png" width="60" height="100" alt="" ></img></a></span></p></div><div class="mtLabelSol"><p><span class="txt_ico_tim "><a href="../res/image_06_5.png" class="imgZoom noTitle" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fenêtre)"><img src="../res/image_06_6.png" width="57" height="100" alt="" ></img></a></span></p></div></div><div class="ddCatchDragEnd" ></div></div></div></div><div class="toolbar"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="BY5H2eegXkeUwN4FwncVMi_Add.onActionNbe(this); return false;" class="btnQuiz correction " id="BY5H2eegXkeUwN4FwncVMi_Add_S_Nbe" aria-controls="BY5H2eegXkeUwN4FwncVMi_Add_N_score BY5H2eegXkeUwN4FwncVMi_Add_N_solution BY5H2eegXkeUwN4FwncVMi_Add_N_globalExp"><span>Correction</span></a><a role="button" title="Effacer les réponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="BY5H2eegXkeUwN4FwncVMi_Add.onActionNe6(this); return false;" class="btnQuiz reset " id="BY5H2eegXkeUwN4FwncVMi_Add_N_reset"><span>Recommencer</span></a><span class="scoreBox"><span class="score " aria-live="polite" id="BY5H2eegXkeUwN4FwncVMi_Add_N_score"><span id="BY5H2eegXkeUwN4FwncVMi_Add_SN105"><span ></span></span></span></span></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="COURS_C1_NOTION_DE_SOLUTION_21.html" class="btnNav prev" title="Précédent (Exercice : Exercice d&apos;appariement)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="COURS_C1_NOTION_DE_SOLUTION_23.html" class="btnNav next" title="Suivant (Exercice : Exercice rédactionnel)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="26"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_1.html"><a href="COURS_C1_NOTION_DE_SOLUTION_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="COURS_C1_NOTION_DE_SOLUTION_2.html"><a href="COURS_C1_NOTION_DE_SOLUTION_2.html" target="_self" class="item"><span>I Solution</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="COURS_C1_NOTION_DE_SOLUTION_3.html"><a href="COURS_C1_NOTION_DE_SOLUTION_3.html" target="_self" class="item"><span>II Concentration des solutions</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="COURS_C1_NOTION_DE_SOLUTION_4.html"><a href="COURS_C1_NOTION_DE_SOLUTION_4.html" target="_self" class="item"><span>III. Préparation d’une solution :</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="COURS_C1_NOTION_DE_SOLUTION_5.html"><a href="COURS_C1_NOTION_DE_SOLUTION_5.html" target="_self" class="item" type="up"><span>EVALUATION</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_18.html"><a href="COURS_C1_NOTION_DE_SOLUTION_18.html" target="_self" class="item"><span>Exercice : Pour chaque question, cocher la (ou les) réponse(s) correcte(s)</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 coQuiz"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_19.html"><a href="COURS_C1_NOTION_DE_SOLUTION_19.html" target="_self" class="item"><span>Exercice : Réponds par V si l’affirmation et vraie et par F si elle est fausse</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_20.html"><a href="COURS_C1_NOTION_DE_SOLUTION_20.html" target="_self" class="item"><span>Exercice : Exercice à trous</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_21.html"><a href="COURS_C1_NOTION_DE_SOLUTION_21.html" target="_self" class="item"><span>Exercice : Exercice d'appariement</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_22.html"><span class="item"><span>Exercice : Exercice d'ordonnancement</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_23.html"><a href="COURS_C1_NOTION_DE_SOLUTION_23.html" target="_self" class="item"><span>Exercice : Exercice rédactionnel</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="COURS_C1_NOTION_DE_SOLUTION_24.html"><a href="COURS_C1_NOTION_DE_SOLUTION_24.html" target="_self" class="item"><span>Exemple de résolution d'exerces avec l'outil numérique Videoscribe</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="COURS_C1_NOTION_DE_SOLUTION_6.html"><a href="COURS_C1_NOTION_DE_SOLUTION_6.html" target="_self" class="item"><span>Références bibliographiques/webographies</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="COURS_C1_NOTION_DE_SOLUTION.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><span class="legalInfo">
+								
+								<span class="hidden"> | </span><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/deed.fr" target="_blank" class="cc-button" title="Attribution - Pas de Modification (nouvelle fenêtre)"><img alt="Attribution - Pas de Modification" width="80" height="15" src="../skin/img/lic/by-nd.png" ></img></a></span><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"button",addMenuBtn:true});
+/*]]>*/</script></body></html>
